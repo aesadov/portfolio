@@ -1,0 +1,8 @@
+.remoteWork {
+    background-color: antiquewhite;
+}
+
+.remoteContainer {
+    flex-direction: column;
+    text-align: center;
+}
