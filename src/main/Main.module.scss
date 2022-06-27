@@ -1,0 +1,87 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.mainBlock {
+  height: 100vh;
+  background-image: url("../assets/image/main.jpg");
+  padding: 0;
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+
+  .mainContainer {
+    justify-content: space-between;
+    padding: 0;
+
+
+    .text {
+      width: 600px;
+
+      h1 {
+        @include text($titleFontFamily, 58px, 62px, null, 800);
+        margin: 0;
+      }
+
+      p {
+        @include text($textFontFamily, 26px, 30px, null, 400);
+        margin-bottom: 40px;
+      }
+
+      .buttons {
+        @media screen and (max-width: 663px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .btnInfo {
+        @include text($titleFontFamily, 14px, 22px, white, 700);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 0 45px;
+        background-color: $primaryColor;
+        border-radius: 29px;
+        border: 3px solid $primaryColor;
+        height: 60px;
+        margin-right: 15px;
+        width: 250px;
+        @media screen and (max-width: 663px) {
+          margin: 0 0 30px;
+        }
+
+        &:hover {
+          background-color: $headerBgColor;
+          color: $primaryColor;
+          border: 3px solid $primaryColor;
+          border-radius: 29px;
+        }
+      }
+
+      .btnContact {
+        @include text($titleFontFamily, 14px, 22px, $primaryColor, 700);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 0 45px;
+        background-color: $headerBgColor;
+        border-radius: 29px;
+        border: 3px solid $primaryColor;
+        height: 60px;
+        width: 250px;
+
+        &:hover {
+          background-color: $primaryColor;
+          color: white;
+          border: 3px solid $primaryColor;
+          border-radius: 29px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      justify-content: center;
+    }
+  }
+}
+

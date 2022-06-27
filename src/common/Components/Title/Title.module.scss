@@ -1,0 +1,54 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.title {
+  h2 {
+    @include text($titleFontFamily, 50px, 54px, $titleTextColor, 700);
+    margin: 0 0 60px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 50%;
+      bottom: -30px;
+      margin-left: -20px;
+      width: 40px;
+      height: 5px;
+      background-color: $primaryColor;
+    }
+  }
+  h3 {
+    @include text ($textFontFamily, 22px, 32px, $textColor, 400);
+    text-align: center;
+    margin: 0 0 60px;
+  }
+}
+
+.titleWhite {
+  h2 {
+    @include text($titleFontFamily, 50px, 54px, white, 700);
+    margin: 0 0 60px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 50%;
+      bottom: -30px;
+      margin-left: -20px;
+      width: 40px;
+      height: 5px;
+      background-color: $primaryColor;
+    }
+  }
+  h3 {
+    @include text ($textFontFamily, 22px, 32px, white, 400);
+    text-align: center;
+    margin: 0 0 60px;
+  }
+}

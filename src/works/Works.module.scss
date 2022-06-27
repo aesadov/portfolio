@@ -1,0 +1,24 @@
+@import 'src/common/styles/sass/mixins';
+
+.worksBlock {
+  background-image: url("../assets/image/bg_works.jpg");
+
+  .worksContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    @media screen and (max-width: 1375px) {
+      padding-bottom: 60px;
+    }
+
+    .works {
+      @include flexBox(flex, null, flex-start, space-between, null);
+      width: 100%;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 1375px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,84 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.work {
+  @include flexBox(flex, column, center, null, null);
+  width: 550px;
+  text-align: center;
+
+  .picture {
+    @include flexBox(flex, null, center, center, null);
+    background-color: #c1c7cc;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: white;
+      border-radius: 15px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.6;
+    }
+
+    .viewBtn {
+      @include text ($titleFontFamily, 14px, 22px, white, 700);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 0 45px;
+      background-color: $primaryColor;
+      border-radius: 29px;
+      border: 3px solid $primaryColor;
+      height: 60px;
+      margin-right: 15px;
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        background-color: white;
+        color: $primaryColor;
+        border: 3px solid $primaryColor;
+        border-radius: 29px;
+      }
+    }
+  }
+
+  .project {
+    @include flexBox(flex, column, flex-start, null, space-around);
+    width: 100%;
+    border: 2px;
+
+    .Name {
+      @include text ($titleFontFamily, 30px, 34px, $titleTextColor, 650);
+      margin: 30px 0 10px 0;
+      text-transform: none;
+      letter-spacing: 0;
+      text-decoration: none !important;
+    }
+
+    .Description {
+      @include text ($textFontFamily, 22px, 32px, $textColor, 400);
+      margin-bottom: 30px;
+      text-align: left;
+      @media screen and (min-width: 1375px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

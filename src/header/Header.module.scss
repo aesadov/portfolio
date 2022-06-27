@@ -1,0 +1,35 @@
+@import 'src/common/styles/sass/mixins';
+
+.header {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  background: $headerBgColor;
+  z-index: 1000;
+
+  .container {
+    @include flexBox(flex, row, center, space-between, null);
+
+    color: white;
+    width: 80%;
+    margin: 30px auto;
+
+    .logo{
+      @include text($titleFontFamily, 14px, 28px, $primaryColor, 700);
+    }
+
+    .nav {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 491px) {
+        width: 250px;
+      }
+
+      a {
+        @include text($titleFontFamily, 14px, 28px, white, 500);
+        text-decoration: none;
+      }
+    }
+  }
+}

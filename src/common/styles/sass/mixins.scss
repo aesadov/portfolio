@@ -1,0 +1,17 @@
+@import 'variables';
+
+@mixin text($fontFamily, $fontSize, $lineHigh, $textColor, $fontWeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHigh;
+  color: $textColor;
+  font-weight: $fontWeight;
+}
+
+@mixin flexBox($flex, $flexDirection, $alignItems, $justifyContent, $alignContent){
+  display: $flex;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  align-content: $alignContent;
+}

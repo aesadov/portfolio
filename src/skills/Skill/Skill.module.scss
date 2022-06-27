@@ -1,0 +1,31 @@
+@import 'src/common/styles/sass/mixins';
+@import 'src/common/styles/sass/variables';
+
+.skill {
+  @include flexBox(flex, column, center, null, null);
+  width: 250px;
+  text-align: center;
+
+  .icon {
+    height: 90px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h3 {
+    @include text($titleFontFamily, 18px, 24px, $titleTextColor, 700);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 20px 0 12px;
+  }
+
+  span {
+    @include text ($textFontFamily, 22px, 32px, $textColor, 400);
+    text-align: center;
+    @media screen and (max-width: 936px) {
+      margin-bottom: 30px;
+    }
+  }
+}

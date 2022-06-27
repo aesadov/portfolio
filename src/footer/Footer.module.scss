@@ -1,0 +1,35 @@
+@import 'src/common/styles/sass/mixins';
+@import 'src/common/styles/sass/variables';
+
+.footer {
+  background-color: black;
+  color: $titleTextColor;
+
+  .footerContainer {
+    flex-direction: column;
+    padding: 30px 0;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .pryamougolnik {
+      height: 50px;
+      max-width: 350px;
+      width: 100%;
+      border: 1px solid $titleTextColor;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .kvadratik {
+      height: 50px;
+      width: 50px;
+      background-color: $titleTextColor;
+    }
+  }
+}
+
+
+
