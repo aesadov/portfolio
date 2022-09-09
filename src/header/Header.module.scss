@@ -14,8 +14,9 @@
     width: 80%;
     margin: 30px auto;
 
-    .logo{
+    .logo {
       @include text($titleFontFamily, 14px, 28px, $primaryColor, 700);
+      letter-spacing: 5px;
     }
 
     .nav {
@@ -29,6 +30,15 @@
       a {
         @include text($titleFontFamily, 14px, 28px, white, 500);
         text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+
+      .active {
+        color: $primaryColor;
       }
     }
   }
