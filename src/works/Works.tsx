@@ -22,6 +22,7 @@ export const Works = () => {
                 <Title title={'My works'} secondTitle={'Carrot cake gingerbread sugar plum'}/>
                     <div className={style.works}>
                         <Work projectName={'Social network'}
+                              link={'https://aesadov.github.io/Social_Network_WayOfSamuray'}
                               style={socialStyle}
                               projectDescription={'Biscuit donut biscuit wafer chocolate cake jelly. Cookie donut bear claw. Tart lollipop cupcake wafer oat cake chocolate bar ice cream.'}/>
                         <Work projectName={'Todo list'}

@@ -49,6 +49,15 @@
   h3 {
     @include text ($textFontFamily, 22px, 32px, white, 400);
     text-align: center;
-    margin: 0 0 60px;
+    margin: 0 0 -5px;
+  }
+  div{
+    @include text ($textFontFamily, 22px, 32px, white, 400);
+    text-align: center;
+    margin: 0 0 50px;
+    a {
+      color: $primaryColor;
+      cursor: pointer;
+    }
   }
 }
