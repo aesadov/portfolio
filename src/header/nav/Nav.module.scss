@@ -6,6 +6,7 @@
   width: 100%;
   background: $headerBgColor;
   z-index: 1000;
+  display: flex;
 
   .container {
     @include flexBox(flex, row, center, space-between, null);
@@ -23,9 +24,6 @@
       width: 300px;
       display: flex;
       justify-content: space-between;
-      @media screen and (max-width: 491px) {
-        width: 250px;
-      }
 
       a {
         @include text($titleFontFamily, 14px, 28px, white, 500);
@@ -41,5 +39,9 @@
         color: $primaryColor;
       }
     }
+
+  }
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 }

@@ -1,15 +1,10 @@
 import React from 'react';
-import {Nav} from './nav/Nav';
-import {BurgerNav} from './burgerNav/BurgerNav';
+import style from './Nav.module.scss';
+import {Link} from 'react-scroll'
 
-export const Header = () => {
-    return <div>
-        <Nav/>
-        <BurgerNav/>
-    </div>
-}
-
-/*<div className={style.header}>
+export const Nav = () => {
+    return (
+        <div className={style.header}>
             <div className={style.container}>
                 <div className={style.logo}>PORTFOLIO</div>
                 <div className={style.nav}>
@@ -42,4 +37,6 @@ export const Header = () => {
                         duration={500}>Contacts</Link>
                 </div>
             </div>
-        </div>*/
+        </div>
+    );
+}
