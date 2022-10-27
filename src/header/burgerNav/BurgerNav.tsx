@@ -44,7 +44,8 @@ export const BurgerNav = () => {
 
                     </div>
                 </div>
-                <div onClick={menuIsOpenHandler} className={style.burgerBtn}></div>
+                {menuIsOpen? <div onClick={menuIsOpenHandler} className={style.crossBtn}></div>
+                : <div onClick={menuIsOpenHandler} className={style.burgerBtn}></div>}
             </div>
         </div>
     );

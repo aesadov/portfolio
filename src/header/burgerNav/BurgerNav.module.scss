@@ -65,6 +65,7 @@
       border-top: 3px solid $primaryColor;
       border-bottom: 3px solid $primaryColor;
     }
+
     .burgerBtn:before {
       content: "";
       position: absolute;
@@ -72,6 +73,25 @@
       left: 0;
       width: 100%;
       border-top: 3px solid $primaryColor;
+    }
+
+    .crossBtn {
+      position: relative;
+      display: block;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    .crossBtn:before {
+      right: -1px;
+      top: -29px;
+      content: '+';
+      color: $primaryColor;
+      position: absolute;
+      z-index: 1000;
+      transform: rotate(45deg);
+      font-size: 50px;
+      font-weight: lighter;
     }
   }
 
