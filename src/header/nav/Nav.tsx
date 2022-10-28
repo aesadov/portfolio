@@ -16,18 +16,18 @@ export const Nav = () => {
                         duration={500}>Home</Link>
                     <Link
                         activeClass={style.active}
-                        to="skils"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}>Skills</Link>
-                    <Link
-                        activeClass={style.active}
                         to="projects"
                         spy={true}
                         smooth={true}
                         offset={-69}
                         duration={500}>Projects</Link>
+                    <Link
+                        activeClass={style.active}
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>Skills</Link>
                     <Link
                         activeClass={style.active}
                         to="contacts"

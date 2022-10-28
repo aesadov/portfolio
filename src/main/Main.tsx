@@ -13,7 +13,7 @@ export const Main = () => {
                         looking for a full-time Frontend developer at Some Great Company</p>
                     <div className={style.buttons}>
                         <Link
-                            to="skils"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             offset={-70}
