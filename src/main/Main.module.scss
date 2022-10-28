@@ -2,13 +2,13 @@
 @import 'src/common/styles/sass/mixins';
 
 .mainBlock {
-  height: 100vh;
+  height: calc(100vh - 90px);;
   background-image: url("../assets/image/main.jpg");
-  padding: 0;
   background-position: 50% 0;
   background-attachment: fixed;
   background-size: cover;
   color: white;
+  padding: 90px;
 
   .mainContainer {
     justify-content: space-between;
