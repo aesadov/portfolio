@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.501961d1.chunk.css",
-    "main.js": "/portfolio/static/js/main.fee71ed0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.fee71ed0.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.a678c302.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a678c302.js.map",
-    "static/js/2.1ab1be5a.chunk.js": "/portfolio/static/js/2.1ab1be5a.chunk.js",
-    "static/js/2.1ab1be5a.chunk.js.map": "/portfolio/static/js/2.1ab1be5a.chunk.js.map",
-    "static/js/3.f757cc89.chunk.js": "/portfolio/static/js/3.f757cc89.chunk.js",
-    "static/js/3.f757cc89.chunk.js.map": "/portfolio/static/js/3.f757cc89.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.281f8040.chunk.css",
+    "main.js": "/portfolio/static/js/main.5b82be41.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5b82be41.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.5dada721.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.5dada721.js.map",
+    "static/js/2.3f574565.chunk.js": "/portfolio/static/js/2.3f574565.chunk.js",
+    "static/js/2.3f574565.chunk.js.map": "/portfolio/static/js/2.3f574565.chunk.js.map",
+    "static/js/3.417f2d18.chunk.js": "/portfolio/static/js/3.417f2d18.chunk.js",
+    "static/js/3.417f2d18.chunk.js.map": "/portfolio/static/js/3.417f2d18.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.501961d1.chunk.css.map": "/portfolio/static/css/main.501961d1.chunk.css.map",
-    "static/js/2.1ab1be5a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1ab1be5a.chunk.js.LICENSE.txt",
+    "static/css/main.281f8040.chunk.css.map": "/portfolio/static/css/main.281f8040.chunk.css.map",
+    "static/js/2.3f574565.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3f574565.chunk.js.LICENSE.txt",
     "static/media/Works.module.scss": "/portfolio/static/media/bg_works.bf27c82b.jpg",
     "static/media/Contacts.module.scss": "/portfolio/static/media/contacts.648143b5.jpg",
     "static/media/css.6387c9c8.svg": "/portfolio/static/media/css.6387c9c8.svg",
@@ -31,9 +31,9 @@
     "static/media/whatsappIcon.bee22811.svg": "/portfolio/static/media/whatsappIcon.bee22811.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a678c302.js",
-    "static/js/2.1ab1be5a.chunk.js",
-    "static/css/main.501961d1.chunk.css",
-    "static/js/main.fee71ed0.chunk.js"
+    "static/js/runtime-main.5dada721.js",
+    "static/js/2.3f574565.chunk.js",
+    "static/css/main.281f8040.chunk.css",
+    "static/js/main.5b82be41.chunk.js"
   ]
 }
