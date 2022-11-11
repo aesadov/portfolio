@@ -3,11 +3,13 @@ import style from './Contacts.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from '../common/Components/Title/Title'
 import axios from 'axios';
+import {Modal} from '../common/Components/Modal/Modal';
 
 
 export const Contacts = () => {
 
     const [disabled, setDisabled] = useState(false)
+    const [modalActive, setModalActive] = useState(false)
 
     return (
         <div id="contacts" className={style.contactsBlock}>
@@ -27,8 +29,8 @@ export const Contacts = () => {
                         contacts: target.contacts.value,
                         message: target.message.value,
                     }).then(() => {
-                        alert(`Thank you for your offer! I'll answer you as soon as I have free time`)
                         setDisabled(false)
+                        setModalActive(true)
                     })
                 }} className={style.contactForm} action="">
 
@@ -40,6 +42,13 @@ export const Contacts = () => {
                 </form>
 
             </div>
+
+            <Modal active={modalActive} setActive={setModalActive}>
+                <div className={style.modal}>
+                    <div>Thank you for your offer! I'll answer you as soon as I have free time</div>
+                    <button onClick={() => setModalActive(false)}>ok</button>
+                </div>
+            </Modal>
         </div>
     );
 }
