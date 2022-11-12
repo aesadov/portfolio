@@ -1,16 +1,19 @@
 @import 'src/common/styles/sass/variables';
 @import 'src/common/styles/sass/mixins';
 
-.remoteWork {
+.blueComponent {
   background-color: $primaryColor;
 
-  .remoteContainer {
+  .blueComponentContainer {
     flex-direction: row;
     text-align: center;
 
     h2 {
       @include text($titleFontFamily, 36px, 42px, white, bold);
       position: relative;
+      @media screen and (max-width: 624px) {
+        margin-top: 5px;
+      }
     }
 
     button {
