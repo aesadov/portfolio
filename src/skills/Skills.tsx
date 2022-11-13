@@ -15,6 +15,12 @@ import httpImage from '../assets/image/http.svg';
 import httpsImage from '../assets/image/https.svg';
 import axiosImage from '../assets/image/Axios.svg';
 import jestImage from '../assets/image/jest.svg';
+import storyBookImage from '../assets/image/StoryBook.svg';
+import postmanImage from '../assets/image/postman.svg';
+import materialUiImage from '../assets/image/material-ui.svg';
+import antDesignImage from '../assets/image/ant-design.svg';
+import gitImage from '../assets/image/git.svg';
+import gitHubImage from '../assets/image/github.svg';
 
 export const Skills = () => {
     const jsStyle = {backgroundImage: `url(${jsImage})`}
@@ -29,11 +35,17 @@ export const Skills = () => {
     const httpsStyle = {backgroundImage: `url(${httpsImage})`}
     const axiosStyle = {backgroundImage: `url(${axiosImage})`}
     const jestStyle = {backgroundImage: `url(${jestImage})`}
+    const storyBookStyle = {backgroundImage: `url(${storyBookImage})`}
+    const postmanStyle = {backgroundImage: `url(${postmanImage})`}
+    const materialUiStyle = {backgroundImage: `url(${materialUiImage})`}
+    const antDesignStyle = {backgroundImage: `url(${antDesignImage})`}
+    const gitStyle = {backgroundImage: `url(${gitImage})`}
+    const gitHubStyle = {backgroundImage: `url(${gitHubImage})`}
 
     return (
         <div id='skills' className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title title={'My Skills'} secondTitle={'there are my core skills'}/>
+                <Title title={'My Skills'} secondTitle={'There are my core skills'}/>
                 <div className={style.skills}>
                     <Skill title={'Java Script'} style={jsStyle}/>
                     <Skill title={'Type Script'} style={tsStyle}/>
@@ -51,6 +63,12 @@ export const Skills = () => {
                     <Skill title={'HTTPS'} style={httpsStyle}/>
                     <Skill title={'AXIOS'} style={axiosStyle}/>
                     <Skill title={'Jest'} style={jestStyle}/>
+                    <Skill title={'Storybook'} style={storyBookStyle}/>
+                    <Skill title={'Postman'} style={postmanStyle}/>
+                    <Skill title={'Material-Ui'} style={materialUiStyle}/>
+                    <Skill title={'Ant-design'} style={antDesignStyle}/>
+                    <Skill title={'Git'} style={gitStyle}/>
+                    <Skill title={'Git-Hub'} style={gitHubStyle}/>
                 </div>
             </div>
         </div>
