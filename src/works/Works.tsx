@@ -19,15 +19,16 @@ export const Works = () => {
     return (
         <div id='projects' className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                <Title title={'My works'} secondTitle={'Carrot cake gingerbread sugar plum'}/>
+                <Title title={'My works'} secondTitle={'Look at my work'}/>
                     <div className={style.works}>
                         <Work projectName={'Social network'}
                               link={'https://aesadov.github.io/Social_Network_WayOfSamuray'}
                               style={socialStyle}
-                              projectDescription={'Biscuit donut biscuit wafer chocolate cake jelly. Cookie donut bear claw. Tart lollipop cupcake wafer oat cake chocolate bar ice cream.'}/>
+                              projectDescription={'Self-learning project. Social network app with using react hooks, routing, lazy loading. Working with REST api, login/logout flow, pagination, form and validation/file uploading. Using unit-tests for code workability check. React/Redux/TypeScript/Redux-thunk/React-router-dom v6/React-hook-form/Axios/Jest'}/>
                         <Work projectName={'Todo list'}
                               style={todoStyle}
-                              projectDescription={'Biscuit donut biscuit wafer chocolate cake jelly. Cookie donut bear claw. Tart lollipop cupcake wafer oat cake chocolate bar ice cream.'}/>
+                              projectDescription={'Learning project. Todolist app created with react hooks, routing and redirects, material UI, REST api request/response flow, unit-tests. React/Redux/Redux-Toolkit/React-router-dom v6/Jest(Unit-Tests) /Storybook/\n' +
+                                  'Axios /Formik/Material UI'}/>
                     </div>
             </div>
         </div>
