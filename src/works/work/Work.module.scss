@@ -5,6 +5,7 @@
   @include flexBox(flex, column, center, null, null);
   width: 550px;
   text-align: center;
+  margin-top: 50px;
 
   .picture {
     @include flexBox(flex, null, center, center, null);
@@ -69,9 +70,9 @@
       @include text ($textFontFamily, 22px, 32px, $textColor, 400);
       margin-bottom: 30px;
       text-align: left;
-      @media screen and (min-width: 1375px) {
-        margin-bottom: 0;
-      }
+   //   @media screen and (min-width: 1375px) {
+    //    margin-bottom: 0;
+    //  }
     }
   }
 }

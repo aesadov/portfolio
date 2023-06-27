@@ -5,23 +5,24 @@ import telegramImageBlue from '../assets/image/telegramIcons.svg';
 import telegramImageGrey from '../assets/image/telegramGrey.svg';
 import vkImageBlue from '../assets/image/vkIcon.svg';
 import vkImageGrey from '../assets/image/vkGrey.svg';
-import instagramImageBlue from '../assets/image/instagramIcon.svg';
-import instagramImageGrey from '../assets/image/instagramGrey.svg';
+import gitHubImageBlue from '../assets/image/iconGithubBlue.svg';
+import gitHubImageGrey from '../assets/image/iconGithubGrey.svg';
 import watsAppInImageBlue from '../assets/image/whatsappIcon.svg';
 import watsAppInImageGrey from '../assets/image/whatsappGrey.svg';
 
 export const Footer = () => {
+    const thisYear = new Date().getFullYear().toString()
     return (
         <div id={'footer'} className={style.footer}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2>Artem Sadov</h2>
                 <div className={style.socialNetworks}>
+                    <SocialNetwork styleBlue={gitHubImageBlue} styleGrey={gitHubImageGrey} link="https://github.com/aesadov" alt="gitHub logo"/>
                     <SocialNetwork styleBlue={telegramImageBlue} styleGrey={telegramImageGrey} link="https://t.me/SadovArtem" alt="telegtram logo" />
                     <SocialNetwork styleBlue={vkImageBlue} styleGrey={vkImageGrey} link="https://vk.com/a.e.sadov" alt="vk logo"/>
-                    <SocialNetwork styleBlue={instagramImageBlue} styleGrey={instagramImageGrey} link="https://instagram.com/a.e.sadov" alt="instagram logo"/>
                     <SocialNetwork styleBlue={watsAppInImageBlue} styleGrey={watsAppInImageGrey} link="https://wa.me/79877500555" alt="watsApp logo"/>
                 </div>
-                <span>Ⓒ 2022 All rights reserved</span>
+                <span>Ⓒ {thisYear} All rights reserved</span>
             </div>
         </div>
     );
